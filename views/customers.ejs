@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Customer List</title>
+</head>
+
+<body>
+    <h3>List of all Customers:</h3>
+    <il>
+        <% for (var cust in all) { %>
+            <li>
+                <%= all[cust].number %>,
+                <%= all[cust].name %>,
+                <%= all[cust].city %>,
+                <%= all[cust].street %>,
+                <<%= all[cust].contact %>,
+            </li>
+        <% }; %>
+    </il>
+</body>
+
+</html>
