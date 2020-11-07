@@ -10,10 +10,17 @@ app.get('/', (req, res) => {
   res.render('index');
 })
 
-const customers = require('./customers');
+const customers = require('./controllers/customers');
 app.get('/getCustomers', (req, res) => {
   customers.getAll((list) => {
     res.render('customers.ejs', { all: list });
+  });
+})
+
+const po = require('./controllers/po');
+app.get('/processPO', (req, res) => {
+  po.processSample((result) => {
+    res.render('po.ejs', { data: result });
   });
 })
 

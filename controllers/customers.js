@@ -10,7 +10,7 @@ connection.connect();
 
 module.exports = {
     getAll: async result => {
-        var list = connection.query('SELECT * FROM customers', function(err, rows){
+        connection.query('SELECT * FROM customers', function(err, rows){
             if (err) throw err;
             console.log('rows: ', rows);
             result(rows);
