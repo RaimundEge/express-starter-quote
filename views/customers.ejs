@@ -9,11 +9,11 @@
     <il>
         <% for (cust in all) { %>
             <li>
-                <%= all[cust].number %>,
+                <%= all[cust].id %>,
                 <%= all[cust].name %>,
                 <%= all[cust].city %>,
                 <%= all[cust].street %>,
-                <<%= all[cust].contact %>,
+                <<%= all[cust].contact %>
             </li>
         <% }; %>
     </il>
