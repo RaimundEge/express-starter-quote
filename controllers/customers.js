@@ -12,7 +12,7 @@ module.exports = {
     getAll: async result => {
         connection.query('SELECT * FROM customers', function(err, rows){
             if (err) throw err;
-            console.log('rows: ', rows);
+            console.log('found ', rows.length, ' customers');
             result(rows);
         });
     }

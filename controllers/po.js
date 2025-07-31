@@ -3,7 +3,7 @@ const axios = require('axios');
 module.exports = {
     processSample: async result => {
         var data = {
-            'order': 'xyz-987654321-ba',
+            'order': 'xyz-987654321-bz',
             'associate': 'RE-676732',
             'custid': '21',
             'amount': '7654.32'
